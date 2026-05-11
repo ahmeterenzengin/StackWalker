@@ -20,10 +20,9 @@ We get last movement in the stack with stack.top() . With the invertDirection fu
 are updated in reverse, and the corresponding movement is popped from the stack. This process continues until the stack is empty, successfully navigating the user back to the (0, 0) point.
 
 ##  Implementation Strategy
-Data Structure (std::stack): A stack was chosen to store movements. bu ensures that the last movement performed becomes the fĜrst step of the return journey (LIFO).
-Struct and Class ArchĜtecture: The Movement struct Ĝs used for data organĜzatĜon, whĜle the routeTracker class manages logĜcal operatĜons such as backtrackĜng and status reportĜng.
-Error HandlĜng and StrĜng ManĜpulatĜon: Even Ĝf the user provĜdes poorly formatted Ĝnput (e.g., "noRTh"), data cleanĜng Ĝs performed usĜng transform and toupper functĜons. AddĜtĜonally, a control
-mechanĜsm (route.empty()) prevents errors Ĝf a backtrack Ĝs attempted wĜth an empty stack.
+Data Structure (std::stack): A stack was chosen to store movements. bu ensures that the last movement performed becomes the first step of the return journey (LIFO).
+Struct and Class ArchĜtecture: The Movement struct is used for data organization, while the routeTracker class manages logical operations such as backtracking and status reporting.
+Error Handling and String Manipulation: Even if the user provides poorly formatted input (e.g., "noRTh"), data cleaning is performed using transform and toupper functions. Additionally, a control mechanism (route.empty()) prevents errors if a backtrack is attempted with an empty stack.
 
 ##  Deployment
 This project is directly uploaded from github repo(https://github.com/ahmeterenzengin/StackWalker).
